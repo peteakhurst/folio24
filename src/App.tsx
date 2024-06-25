@@ -1,12 +1,9 @@
 import './App.css';
 // import Footer from './components/Footer';
 // import Grid from './components/Grid';
-
-import Navbar from './components/Navbar';
 // import Noise from './components/Noise';
-import Home from './pages/Home';
 import WorkDetail from './components/WorkDetail';
-// import WorkList from './components/WorkList';
+import Home from './pages/Home';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -15,7 +12,7 @@ function App() {
       <main>
         <Routes>
           <Route path='/' element={<Home />} />
-          {/* <Route path='/work/:id' component={WorkDetail} /> */}
+          <Route path='/work/:id' element={<WorkDetail />} />
         </Routes>
       </main>
     </>

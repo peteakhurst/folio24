@@ -1,6 +1,8 @@
 import { useMotionValue, motion, useSpring, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { FiArrowRight } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
+import works from '../data/works';
 
 function WorkList() {
   return (
@@ -9,20 +11,17 @@ function WorkList() {
         <h2 className='py-10 text-3xl font-black text-oliveGreen'>
           Selected Work
         </h2>
-        <Link heading='Swaggle' imgSrc='swaggleScreenshot.png' href='#' />
-        <Link heading='SESIMI' imgSrc='sesimi.jpg' href='#' />
-        <Link
-          heading='Latitude'
-          imgSrc='clearDynamicsScreenshot.png'
-          href='#'
-        />
-        <Link heading='The Catfish' imgSrc='catfish.png' href='#' />
+        {works.map((work) => (
+          <Link key={work.id} to={`/work/${work.id}`}>
+            <Work heading={work.heading} imgSrc={work.imgSrc} />
+          </Link>
+        ))}
       </div>
     </section>
   );
 }
 
-const Link = ({ heading, imgSrc, href }) => {
+const Work = ({ heading, imgSrc }) => {
   const ref = useRef(null);
 
   const x = useMotionValue(0);
@@ -52,7 +51,6 @@ const Link = ({ heading, imgSrc, href }) => {
 
   return (
     <motion.a
-      href={href}
       ref={ref}
       onMouseMove={handleMouseMove}
       initial='initial'
