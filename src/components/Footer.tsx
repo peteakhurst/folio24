@@ -1,9 +1,9 @@
 import { CgFileDocument } from 'react-icons/cg';
-import { FaEnvelope, FaLinkedinIn } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import Noise from './Noise';
 
 const Footer = () => {
-  let currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
 
   return (
     <>
@@ -16,12 +16,16 @@ const Footer = () => {
               </h4>
               <ul className='text-cream'>
                 <li className='flex items-center gap-2'>
-                  <p className='font-bold'>Download:</p>
-                  <a className='hover:underline' href=''>
-                    Resume
+                  <p className='font-bold'>Code:</p>
+                  <a
+                    className='hover:underline'
+                    href='https://github.com/peteakhurst'
+                  >
+                    GitHub
                   </a>
-                  <CgFileDocument className='text-cream' />
+                  <FaGithub className='text-cream' />
                 </li>
+
                 <li className='flex items-center gap-2'>
                   <p className='font-bold'>Connect on:</p>
                   <a
@@ -31,6 +35,13 @@ const Footer = () => {
                     LinkedIn
                   </a>
                   <FaLinkedinIn className='text-cream' />
+                </li>
+                <li className='flex items-center gap-2'>
+                  <p className='font-bold'>Download:</p>
+                  <a className='hover:underline' href=''>
+                    Resume
+                  </a>
+                  <CgFileDocument className='text-cream' />
                 </li>
                 <li className='flex items-center gap-2 align-middle'>
                   <p className='font-bold'>Email me:</p>

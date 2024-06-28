@@ -13,7 +13,11 @@ function WorkList() {
         </h2>
         {works.map((work) => (
           <Link key={work.id} to={`/work/${work.id}`}>
-            <Work heading={work.heading} imgSrc={work.imgSrc} />
+            <Work
+              heading={work.heading}
+              imgSrc={work.imgSrc}
+              subHeading={work.subHeading}
+            />
           </Link>
         ))}
       </div>
@@ -21,7 +25,7 @@ function WorkList() {
   );
 }
 
-const Work = ({ heading, imgSrc }) => {
+const Work = ({ heading, imgSrc, subHeading }) => {
   const ref = useRef(null);
 
   const x = useMotionValue(0);
@@ -68,7 +72,7 @@ const Work = ({ heading, imgSrc }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className='relative z-10 block font-bold uppercase transition-colors duration-500 text-lg md:text-[6rem] text-oliveGreen group-hover:text-neutral-50'
+          className='relative z-10 block mt-12 font-bold uppercase transition-colors duration-500 text-lg md:text-[6rem] text-oliveGreen group-hover:text-neutral-50'
         >
           {heading.split('').map((l, i) => (
             <motion.span
@@ -84,6 +88,9 @@ const Work = ({ heading, imgSrc }) => {
             </motion.span>
           ))}
         </motion.span>
+        <span className='relative z-10 block mt-12 text-base transition-colors duration-500 text-neutral-500 group-hover:text-neutral-50'>
+          {subHeading}
+        </span>
       </div>
 
       <motion.img
