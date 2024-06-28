@@ -3,8 +3,10 @@ import { useParams } from 'react-router-dom';
 import works, { Work } from '../data/works';
 
 function WorkDetail() {
-  const { id } = useParams();
-  const work = works.find((work: Work) => work.id === parseInt(id || ''));
+  const { id } = useParams<{ id: string }>();
+  const work: Work | undefined = works.find(
+    (work: Work) => work.id === parseInt(id || '')
+  );
 
   if (!work) {
     return <div>Work not found</div>;
