@@ -2,8 +2,8 @@ import { FaCaretDown } from 'react-icons/fa';
 
 const Grid = () => {
   return (
-    <div className='container max-w-5xl mx-auto'>
-      <div className='grid items-center gap-4 pt-4 pb-20 lg:grid-cols-2 min-h-[38vh]'>
+    <div className='container max-w-5xl pb-16 mx-auto'>
+      <div className='grid items-center gap-4 pt-4 pb-4 lg:grid-cols-2 min-h-[38vh]'>
         <div className='w-full h-full row-span-2 p-10 align-middle border-b-8 border-r-8 rounded-[48px] place-items-center bg-lightGreen place-content-center border-coral'>
           <div className='mx-auto'>
             <h2 className='text-3xl font-light text-oliveGreen'>
@@ -29,6 +29,35 @@ const Grid = () => {
             Actions speak louder than words, please feel free to checkout my
             work below <FaCaretDown className='inline' />
           </p>
+        </div>
+      </div>
+      <div className='grid items-center gap-4 pt-4 pb-4 lg:grid-cols-3'>
+        <div className='w-full h-full mx-auto place-items-center place-content-center p-8 rounded-[48px] bg-lightGreen border-b-8 border-r-8 border-coral'>
+          <h5 className='text-lg font-semibold text-oliveGreen'>
+            E-com experience:
+          </h5>
+          <ul className='text-sm font-light text-oliveGreen'>
+            <li>Shopify</li>
+            <li>Wordpress</li>
+            <li>WooCommerce</li>
+          </ul>
+        </div>
+        <div className='w-full h-full mx-auto place-items-center place-content-center p-8 rounded-[48px] bg-lightGreen border-b-8 border-r-8 border-coral'>
+          <h5 className='text-lg font-semibold text-oliveGreen'>Skills:</h5>
+          <ul className='text-sm font-light text-oliveGreen'>
+            <li>HTML/CSS/Javascript</li>
+            <li>Liquid</li>
+            <li>Tailwind</li>
+          </ul>
+        </div>
+        <div className='w-full h-full mx-auto place-items-center place-content-center p-8 rounded-[48px] bg-lightGreen border-b-8 border-r-8 border-coral'>
+          <h5 className='text-lg font-semibold text-oliveGreen'>
+            JS Frameworks:
+          </h5>
+          <ul className='text-sm font-light text-oliveGreen'>
+            <li>ReactJs</li>
+            <li>NextJs</li>
+          </ul>
         </div>
       </div>
     </div>
