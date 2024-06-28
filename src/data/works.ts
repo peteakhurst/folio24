@@ -1,4 +1,12 @@
-const works = [
+export type Work = {
+    id: number;
+    heading: string;
+    imgSrc: string;
+    subHeading: string;
+    href: string;
+  };
+
+const works: Work[] = [
     { id: 1, heading: 'Swaggle', imgSrc: '../swaggleScreenshot.png', subHeading: 'Shopify/ReactJs/TailwindCss', href:"https://swaggle.com.au/" },
     { id: 2, heading: 'Sesimi', imgSrc: '../sesimi.jpg', subHeading: 'ReactJs/TailwindCss/GSAP', href:'https://sesimi.com/' },
     { id: 3, heading: 'Latitude', imgSrc: '../clearDynamicsScreenshot.png', subHeading: 'ReactJs/TailwindCss/AWS', href:'https://www.latitudefinancial.com.au/credit-cards/28-degrees/' },
