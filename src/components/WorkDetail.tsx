@@ -1,10 +1,14 @@
 // src/pages/WorkDetail.js
 import { useParams } from 'react-router-dom';
-import works from '../data/works';
+import works, { Work } from '../data/works';
 
 function WorkDetail() {
   const { id } = useParams();
-  const work = works.find((work) => work.id === parseInt(id));
+  const work = works.find((work: Work) => work.id === parseInt(id || ''));
+
+  if (!work) {
+    return <div>Work not found</div>;
+  }
   // You can use the id to fetch or display the relevant work details
   return (
     <div>
