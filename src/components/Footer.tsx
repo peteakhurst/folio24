@@ -38,7 +38,7 @@ const Footer = () => {
                 </li>
                 <li className='flex items-center gap-2'>
                   <p className='font-bold'>Download:</p>
-                  <a className='hover:underline' href=''>
+                  <a className='hover:underline' href='Pete_Akhurst_cv.pdf'>
                     Resume
                   </a>
                   <CgFileDocument className='text-cream' />

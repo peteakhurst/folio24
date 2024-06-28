@@ -17,6 +17,7 @@ function WorkList() {
               heading={work.heading}
               imgSrc={work.imgSrc}
               subHeading={work.subHeading}
+              href={work.href}
             />
           </Link>
         ))}
@@ -25,7 +26,7 @@ function WorkList() {
   );
 }
 
-const Work = ({ heading, imgSrc, subHeading }) => {
+const Work = ({ heading, imgSrc, subHeading, href }) => {
   const ref = useRef(null);
 
   const x = useMotionValue(0);
@@ -55,11 +56,12 @@ const Work = ({ heading, imgSrc, subHeading }) => {
 
   return (
     <motion.a
+      href={href}
       ref={ref}
       onMouseMove={handleMouseMove}
       initial='initial'
       whileHover='whileHover'
-      className='relative flex items-center justify-between py-4 transition-colors duration-500 border-b-2 group border-oliveGreen hover:border-neutral-50 md:py-8'
+      className='relative flex items-center justify-between py-4 transition-colors duration-500 border-b-2 group border-oliveGreen hover:border-neutral-50 md:py-12'
     >
       <div>
         <motion.span
@@ -72,7 +74,7 @@ const Work = ({ heading, imgSrc, subHeading }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className='relative z-10 block mt-12 font-bold uppercase transition-colors duration-500 text-lg md:text-[6rem] text-oliveGreen group-hover:text-neutral-50'
+          className='relative z-10 block font-bold uppercase transition-colors duration-500 text-lg md:text-[6rem] text-oliveGreen group-hover:text-neutral-50'
         >
           {heading.split('').map((l, i) => (
             <motion.span
@@ -88,7 +90,8 @@ const Work = ({ heading, imgSrc, subHeading }) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className='relative z-10 block mt-12 text-base transition-colors duration-500 text-neutral-500 group-hover:text-neutral-50'>
+
+        <span className='relative z-10 block mx-4 text-sm transition-colors duration-500 top-10 text-coral group-hover:text-neutral-50'>
           {subHeading}
         </span>
       </div>

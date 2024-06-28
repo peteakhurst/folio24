@@ -1,8 +1,8 @@
 const works = [
-    { id: 1, heading: 'Swaggle', imgSrc: '../swaggleScreenshot.png', subHeading: 'Shopify/ReactJs/TailwindCss' },
-    { id: 2, heading: 'SESIMI', imgSrc: '../sesimi.jpg', subHeading: 'ReactJs/TailwindCss/GSAP' },
-    { id: 3, heading: 'Latitude', imgSrc: '../clearDynamicsScreenshot.png', subHeading: 'ReactJs/TailwindCss/AWS' },
-    { id: 4, heading: 'The Catfish', imgSrc: '../catfish.png', subHeading: 'Shopify/Liquid/Css' },
+    { id: 1, heading: 'Swaggle', imgSrc: '../swaggleScreenshot.png', subHeading: 'Shopify/ReactJs/TailwindCss', href:"https://swaggle.com.au/" },
+    { id: 2, heading: 'Sesimi', imgSrc: '../sesimi.jpg', subHeading: 'ReactJs/TailwindCss/GSAP', href:'https://sesimi.com/' },
+    { id: 3, heading: 'Latitude', imgSrc: '../clearDynamicsScreenshot.png', subHeading: 'ReactJs/TailwindCss/AWS', href:'https://www.latitudefinancial.com.au/credit-cards/28-degrees/' },
+    { id: 4, heading: 'Catfish', imgSrc: '../catfish.png', subHeading: 'Shopify/Liquid/Css', href:'https://www.thecatfish.com.au/' },
     { id: 5, heading: 'Harkness', imgSrc: '../harkScreenshot.png', subHeading: 'Shopify/Liquid/Css', href:"https://harknessjewellery.com/" },
   ];
 
