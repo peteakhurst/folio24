@@ -6,7 +6,7 @@ import WorkList from '../components/WorkList';
 function Home() {
   return (
     <>
-      <section className='bg-oliveGreen add-noise'>
+      <section className='add-noise'>
         <Headline />
         <Grid />
       </section>

@@ -1,7 +1,24 @@
 /** @type {import('tailwindcss').Config} */
+import fluid, { extract, screens, fontSize } from 'fluid-tailwind';
+
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: {
+    files: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+    extract,
+  },
   theme: {
+    screens,
+    fontSize,
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+      center: true,
+    },
     extend: {
       colors: {
         oliveGreen: '#40531B',
@@ -14,5 +31,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [fluid],
 };

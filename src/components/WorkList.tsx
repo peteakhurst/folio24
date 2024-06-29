@@ -9,20 +9,22 @@ import works from '../data/works';
 function WorkList() {
   return (
     <section className='py-10 bg-coral rounded-t-2xl add-noise' id='projects'>
-      <div className='max-w-5xl mx-auto mb-10'>
-        <h2 className='py-10 text-3xl font-black text-oliveGreen'>
-          Selected Work
-        </h2>
-        {works.map((work) => (
-          <Link key={work.id} to={`/work/${work.id}`}>
-            <Work
-              heading={work.heading}
-              imgSrc={work.imgSrc}
-              subHeading={work.subHeading}
-              href={work.href}
-            />
-          </Link>
-        ))}
+      <div className='container'>
+        <div className='max-w-5xl mx-auto mb-10'>
+          <h2 className='py-10 text-3xl font-black text-oliveGreen'>
+            Selected Work
+          </h2>
+          {works.map((work) => (
+            <Link key={work.id} to={`/work/${work.id}`}>
+              <Work
+                heading={work.heading}
+                imgSrc={work.imgSrc}
+                subHeading={work.subHeading}
+                href={work.href}
+              />
+            </Link>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -86,7 +88,7 @@ const Work = ({
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className='relative z-10 block font-bold uppercase transition-colors duration-500 text-lg md:text-[6rem] text-oliveGreen group-hover:text-neutral-50'
+          className='relative z-10 block font-bold uppercase transition-colors duration-500 text-3xl md:text-[6rem] text-oliveGreen group-hover:text-neutral-50'
         >
           {heading.split('').map((l, i) => (
             <motion.span
@@ -103,7 +105,7 @@ const Work = ({
           ))}
         </motion.span>
 
-        <span className='relative z-10 block mx-4 text-sm transition-colors duration-500 top-10 text-coral group-hover:text-neutral-50'>
+        <span className='relative z-10 block text-sm transition-colors duration-500 lg:mx-4 md:top-10 text-coral group-hover:text-neutral-50'>
           {subHeading}
         </span>
       </div>

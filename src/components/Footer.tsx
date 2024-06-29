@@ -10,7 +10,7 @@ const Footer = () => {
         <footer className='container max-w-5xl mx-auto rounded-t-2xl'>
           <div className='flex justify-between gap-4 mb-4 align-middle'>
             <div className=''>
-              <h4 className='py-10 text-xl font-black text-cream'>
+              <h4 className='py-10 text-xl font-black text-center text-cream'>
                 Let’s make some magic
               </h4>
               <ul className='text-cream'>
@@ -53,11 +53,6 @@ const Footer = () => {
                   <FaEnvelope className='text-cream' />
                 </li>
               </ul>
-            </div>
-            <div className=''>
-              <h4 className='py-10 text-xl font-black text-cream'>
-                Just For Fun
-              </h4>
             </div>
           </div>
           <div className='pb-4 text-center'>
