@@ -11,7 +11,7 @@ body {
 
 .add-noise {
   display: block;
-  background: url('Noise.svg');
+  background: url('./assets/Noise.svg');
   height: 100%;
   width: 100%;
   background-size: 10%;

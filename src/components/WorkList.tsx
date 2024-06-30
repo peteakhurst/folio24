@@ -3,7 +3,6 @@
 import { useMotionValue, motion, useSpring, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { FiArrowRight } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
 import works from '../data/works';
 
 function WorkList() {
@@ -11,18 +10,16 @@ function WorkList() {
     <section className='py-10 bg-coral rounded-t-2xl add-noise' id='projects'>
       <div className='container'>
         <div className='mb-10'>
-          <h2 className='py-10 text-3xl font-black text-oliveGreen'>
+          <h2 className='py-10 text-xl font-black text-oliveGreen'>
             Selected Work
           </h2>
           {works.map((work) => (
-            <Link key={work.id} to={`/work/${work.id}`}>
-              <Work
-                heading={work.heading}
-                imgSrc={work.imgSrc}
-                subHeading={work.subHeading}
-                href={work.href}
-              />
-            </Link>
+            <Work
+              heading={work.heading}
+              imgSrc={work.imgSrc}
+              subHeading={work.subHeading}
+              href={work.href}
+            />
           ))}
         </div>
       </div>

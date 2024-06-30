@@ -27,7 +27,10 @@ const Grid = () => {
         <div className='w-full h-full mx-auto place-items-center place-content-center p-8 rounded-[48px] bg-lightGreen border-b-8 border-r-8 border-coral'>
           <p className='text-lg font-light lg:text-2xl text-oliveGreen'>
             Actions speak louder than words, please feel free to checkout my
-            work below <FaCaretDown className='inline' />
+            work below{' '}
+            <a href='#projects'>
+              <FaCaretDown className='inline' />
+            </a>
           </p>
         </div>
       </div>
