@@ -1,6 +1,5 @@
 import { CgFileDocument } from 'react-icons/cg';
 import { FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import Noise from './Noise';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
