@@ -1,21 +1,8 @@
-import { motion } from 'framer-motion';
 import { FaCaretDown } from 'react-icons/fa';
 
 const Grid = () => {
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
   return (
-    <motion.div className='container'>
+    <div className='container'>
       <div className='grid items-center gap-4 pt-4 pb-4 lg:grid-cols-2 min-h-[38vh] lg:max-w-6xl lg:mx-auto '>
         <div className='w-full h-full row-span-2 p-10 align-middle border-b-8 border-r-8 rounded-2xl place-items-center bg-lightGreen place-content-center border-coral'>
           <div className='mx-auto'>
@@ -47,7 +34,7 @@ const Grid = () => {
           </p>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
