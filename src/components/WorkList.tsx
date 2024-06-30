@@ -10,7 +10,7 @@ function WorkList() {
   return (
     <section className='py-10 bg-coral rounded-t-2xl add-noise' id='projects'>
       <div className='container'>
-        <div className='max-w-5xl mx-auto mb-10'>
+        <div className='mb-10'>
           <h2 className='py-10 text-3xl font-black text-oliveGreen'>
             Selected Work
           </h2>

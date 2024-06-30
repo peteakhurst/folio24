@@ -7,13 +7,13 @@ const Footer = () => {
   return (
     <>
       <div className='bg-oliveGreen add-noise'>
-        <footer className='container max-w-5xl mx-auto rounded-t-2xl'>
-          <div className='flex justify-between gap-4 mb-4 align-middle'>
+        <footer className='container rounded-t-2xl'>
+          <div className='flex justify-center gap-4 mb-4 align-middle'>
             <div className=''>
-              <h4 className='py-10 text-xl font-black text-center text-cream'>
+              <h4 className='py-4 text-xl font-black text-center text-cream'>
                 Let’s make some magic
               </h4>
-              <ul className='text-cream'>
+              <ul className='flex flex-col gap-2 md:flex-row text-cream'>
                 <li className='flex items-center gap-2'>
                   <p className='font-bold'>Code:</p>
                   <a
