@@ -8,7 +8,7 @@ import Scroller from '../components/Scroller';
 function Home() {
   return (
     <>
-      <div className='add-noise'>
+      <div className='overflow-none add-noise'>
         <Headline />
         <Grid />
         <Scroller />

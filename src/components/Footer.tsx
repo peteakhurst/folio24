@@ -59,7 +59,6 @@ const Footer = () => {
               &copy; {currentYear} Gen2 By Design
             </small>
           </div>
-          <Noise />
         </footer>
       </div>
     </>
