@@ -102,7 +102,7 @@ const Work = ({
           ))}
         </motion.span>
 
-        <span className='relative z-10 hidden text-sm transition-colors duration-500 md:block lg:mx-4 md:top-10 text-coral group-hover:text-neutral-50'>
+        <span className='relative z-10 hidden text-sm transition-colors duration-500 md:block lg:mx-4 md:top-12 text-coral group-hover:text-neutral-50'>
           {subHeading}
         </span>
       </div>
