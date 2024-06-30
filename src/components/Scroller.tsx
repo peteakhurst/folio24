@@ -2,7 +2,7 @@ import Marquee from 'react-fast-marquee';
 
 const Scroller = () => {
   return (
-    <div className='flex flex-col items-center justify-center w-full add-noise'>
+    <div className='flex flex-col items-center justify-center w-full '>
       <div className='flex flex-col w-full my-16 add-noise'>
         <div className='flex flex-col space-y-2 text-center mx-14'>
           {/* <span className='text-2xl'>

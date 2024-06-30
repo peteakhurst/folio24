@@ -7,7 +7,7 @@ import works from '../data/works';
 
 function WorkList() {
   return (
-    <section className='py-10 bg-coral rounded-t-2xl add-noise' id='projects'>
+    <section className='py-10 bg-coral rounded-t-2xl ' id='projects'>
       <div className='container'>
         <div className='mb-10'>
           <h2 className='py-10 text-xl font-black text-oliveGreen'>
@@ -72,7 +72,7 @@ const Work = ({
       onMouseMove={handleMouseMove}
       initial='initial'
       whileHover='whileHover'
-      className='relative flex items-center justify-between py-4 transition-colors duration-500 border-b-2 group border-oliveGreen hover:border-neutral-50 md:py-12'
+      className='relative flex items-center justify-between transition-colors duration-500 border-b-2 group border-oliveGreen hover:border-neutral-50 md:py-12'
     >
       <div>
         <motion.span
@@ -85,7 +85,7 @@ const Work = ({
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className='relative z-10 block font-bold uppercase transition-colors duration-500 text-3xl md:text-[6rem] text-oliveGreen group-hover:text-neutral-50'
+          className='relative z-10 block font-bold uppercase transition-colors duration-500 text-4xl md:text-[9rem] text-oliveGreen group-hover:text-neutral-50'
         >
           {heading.split('').map((l, i) => (
             <motion.span
@@ -102,7 +102,7 @@ const Work = ({
           ))}
         </motion.span>
 
-        <span className='relative z-10 block text-sm transition-colors duration-500 lg:mx-4 md:top-10 text-coral group-hover:text-neutral-50'>
+        <span className='relative z-10 hidden text-sm transition-colors duration-500 md:block lg:mx-4 md:top-10 text-coral group-hover:text-neutral-50'>
           {subHeading}
         </span>
       </div>
