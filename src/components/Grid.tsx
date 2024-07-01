@@ -4,7 +4,7 @@ const Grid = () => {
   return (
     <div className='container'>
       <div className='grid items-center gap-4 pt-4 pb-4 lg:grid-cols-2 min-h-[38vh] lg:max-w-6xl lg:mx-auto '>
-        <div className='w-full h-full row-span-2 p-10 align-middle border-b-8 border-r-8 rounded-2xl place-items-center bg-lightGreen place-content-center border-coral'>
+        <div className='w-full h-full row-span-2 p-10 align-middle border-b-8 border-r-9 rounded-2xl place-items-center bg-lightGreen place-content-center border-coral'>
           <div className='mx-auto'>
             <h2 className='text-lg font-light lg:text-2xl text-oliveGreen'>
               Hi, i'm

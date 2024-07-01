@@ -15,6 +15,7 @@ function WorkList() {
           </h2>
           {works.map((work) => (
             <Work
+              key={work.id}
               heading={work.heading}
               imgSrc={work.imgSrc}
               subHeading={work.subHeading}

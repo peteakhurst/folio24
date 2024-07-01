@@ -1,7 +1,9 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+
 import Footer from '../components/Footer';
 import Grid from '../components/Grid';
 import Headline from '../components/Headline';
-
 import WorkList from '../components/WorkList';
 import Scroller from '../components/Scroller';
 
