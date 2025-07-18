@@ -7,11 +7,10 @@ function WorkDetail() {
   const work: Work | undefined = works.find(
     (work: Work) => work.id === parseInt(id || '')
   );
-
+  if
    (!work) {
-    return <div>Work not found</div>;
+    return <div>Work not found</div>
   }
-  // You can use the id to fetch or display the relevant work details
   return (
     <div>
       <h2>Work Detail for {id}</h2>
