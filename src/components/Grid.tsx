@@ -21,7 +21,7 @@ const Grid = () => {
             magic!
           </p>
           <p className='mx-auto my-4 text-lg font-semibold lg:text-xl hover:underline'>
-            <a class="text-orange" href='mailto:peteakhurst@gmail.com'>pete@email.com</a>
+            <a className="text-orange" href='mailto:peteakhurst@gmail.com'>pete@email.com</a>
           </p>
         </div>
         <div className='w-full h-full p-8 mx-auto border-b-8 border-r-8 place-items-center place-content-center rounded-2xl bg-white border-black'>
