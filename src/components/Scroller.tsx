@@ -10,42 +10,42 @@ const Scroller = () => {
           </span> */}
         </div>
         <Marquee autoFill pauseOnClick>
-          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer bg-cream rounded-xl text-oliveGreen'>
+          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer bg-black rounded-xl text-orange'>
             Tailwindcss
           </div>
-          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer text-oliveGreen bg-coral rounded-xl'>
+          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer text-white  rounded-xl'>
             Bootstrap
           </div>
-          <div className='flex p-4 space-x-5 text-2xl font-bold cursor-pointer text-oliveGreen bg-cream rounded-xl'>
+          <div className='flex p-4 space-x-5 text-2xl font-bold cursor-pointer text-orange bg-black rounded-xl'>
             HTML
           </div>
-          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer text-oliveGreen bg-coral rounded-xl'>
+          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer text-white  rounded-xl'>
             CSS
           </div>
-          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer bg-cream rounded-xl text-oliveGreen'>
+          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer bg-black rounded-xl text-orange'>
             Javascript
           </div>
-          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer text-oliveGreen bg-coral rounded-xl'>
+          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer text-white rounded-xl'>
             Node JS
           </div>
         </Marquee>
         <Marquee autoFill pauseOnClick direction='right'>
-          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer text-oliveGreen bg-coral rounded-xl'>
+          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer bg-black text-orange rounded-xl'>
             ReactJS
           </div>
-          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer bg-cream rounded-xl text-oliveGreen'>
+          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer rounded-xl text-white'>
             NextJS
           </div>
-          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer text-oliveGreen bg-coral rounded-xl'>
+          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer text-orange bg-black rounded-xl'>
             Shopify
           </div>
-          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer bg-cream rounded-xl text-oliveGreen'>
+          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer rounded-xl text-white'>
             AWS
           </div>
-          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer text-oliveGreen bg-coral rounded-xl'>
+          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer text-orange bg-black rounded-xl'>
             Mongodb
           </div>
-          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer bg-cream rounded-xl text-oliveGreen'>
+          <div className='flex p-4 m-1 space-x-5 text-2xl font-bold cursor-pointer rounded-xl text-white'>
             Typescript
           </div>
         </Marquee>

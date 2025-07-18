@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+  /** @type {import('tailwindcss').Config} */
 import fluid, { extract, screens, fontSize } from 'fluid-tailwind';
 
 export default {
@@ -21,9 +21,8 @@ export default {
       center: true,
     },
     extend: {
-      colors: {
-        oliveGreen: '#40531B',
-        coral: '#EFC8E3',
+      colors: { 
+       orange: '#F96302',
         lightGreen: '#D7F9F1',
         cream: '#F4F1DE',
       },

@@ -8,7 +8,7 @@ function WorkDetail() {
     (work: Work) => work.id === parseInt(id || '')
   );
 
-  if (!work) {
+   (!work) {
     return <div>Work not found</div>;
   }
   // You can use the id to fetch or display the relevant work details

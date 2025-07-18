@@ -10,7 +10,7 @@ function WorkList() {
     <section className='py-10 bg-coral rounded-t-2xl ' id='projects'>
       <div className='container'>
         <div className='mb-10'>
-          <h2 className='py-10 text-xl font-black text-oliveGreen'>
+          <h2 className='py-10 text-2xl font-black text-white underline etracking-wide uppercase'>
             Selected Work
           </h2>
           {works.map((work) => (
@@ -86,7 +86,7 @@ const Work = ({
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className='relative z-10 block font-bold uppercase transition-colors duration-500 text-4xl md:text-[9rem] text-oliveGreen group-hover:text-neutral-50'
+          className='relative z-10 block font-black uppercase transition-colors duration-300 text-4xl md:text-[9.5rem] tracking-wide text-white group-hover:text-black'
         >
           {heading.split('').map((l, i) => (
             <motion.span
@@ -103,7 +103,7 @@ const Work = ({
           ))}
         </motion.span>
 
-        <span className='relative z-10 hidden text-sm transition-colors duration-500 md:block lg:mx-4 md:top-12 text-coral group-hover:text-neutral-50'>
+        <span className='relative z-10 hidden text-sm font-bold transition-colors duration-500 md:block lg:mx-4 md:top-12 text-white group-hover:text-black'>
           {subHeading}
         </span>
       </div>
@@ -139,7 +139,7 @@ const Work = ({
         transition={{ type: 'spring' }}
         className='relative z-10 p-4'
       >
-        <FiArrowRight className='text-5xl text-neutral-50' />
+        <FiArrowRight className='text-5xl' />
       </motion.div>
     </motion.a>
   );

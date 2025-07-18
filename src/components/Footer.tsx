@@ -10,7 +10,7 @@ const Footer = () => {
         <footer className='container rounded-t-2xl'>
           <div className='flex flex-col items-center justify-center gap-2 mb-4 align-middle'>
             <h4 className='py-4 text-xl font-black text-center text-cream'>
-              Let’s make some magic
+              Let’s connect 
             </h4>
             <ul className='flex flex-col items-center justify-center gap-2 text-center md:flex-row text-cream'>
               <li className='flex items-center gap-2 text-center'>
